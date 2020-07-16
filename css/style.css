@@ -76,10 +76,15 @@ h1, h2, h3, h4, h5, h6{
     margin: 0 auto;
 }
 
+.page-section{
+    margin-bottom: 80px;
+}
+
 /* VARIABLES */
 :root{
     --color-white: #FFFFFF;
     --color-black: #2F3035;
+    --color-black-f: #656464;
     --color-blue: #1C62CD;
     --color-gray :#F0F0F4;
     --color-light-gray: #C4C4C4;
@@ -97,8 +102,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .header__top {
 }
-.container {
-}
+
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -175,22 +180,26 @@ h1, h2, h3, h4, h5, h6{
     bottom: -15px;
     right: -14px;
 }
+
 .user__link {
 }
+
 .header__bottom {
-    padding-bottom: 78px;
+    margin-bottom: 80px;
 }
+
 .menu__categories {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: var(--color-gray);
-
     min-height: 53px;
 }
+
 .menu__categories__item {
     position: relative;
 }
+
 .menu__categories__link {
     transition: all .3s;
     font-weight: 400;
@@ -226,8 +235,6 @@ h1, h2, h3, h4, h5, h6{
 
 /* BANNER */
 .banner__section {
-}
-.container {
 }
 .banner__section-inner {
     display: flex;
@@ -393,4 +400,68 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     font-family: var(--font-Bar);
     font-weight: 700;
+}
+
+
+/* SEARCH */
+
+.search {
+}
+.page-section {
+}
+.container {
+}
+.search__inner {
+}
+.search__tabs {
+    margin-bottom: 25px;
+}
+.search__tabs-item {
+    padding: 11px 26px 12px;
+}
+
+.search__tabs-item--active{
+    border-radius: 5px;
+    background-color: var(--color-gray);
+    font-weight: 700;
+    font-family: var(--font-SFB-b);
+}
+.
+.search__content {
+}
+.search__content-item {
+    display: none;
+}
+.search__content-item--active{
+    display: block;
+}
+.search__content-form {
+    display: flex;
+}
+.search__content-input {
+    background-color: var(--color-gray);
+    border-radius: 3px;
+    padding: 5px 20px;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+}
+
+.search__content-input::placeholder{
+    color: var(--color-black-f);
+}
+.search__content-btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-family: var(--font-SFB-b);
+    border-radius: 3px;
+    background-color: var(--color-blue);
+    padding: 17px 41px;
+    border: none;
+    margin-left: -3px;
 }
