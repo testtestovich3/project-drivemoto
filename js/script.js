@@ -8,14 +8,33 @@ $(function(){
   });
 
   // форма с табами
-  $('.search__tabs-item').on('click', function(e){
+  $('.tab').on('click', function(e){
     e.preventDefault();
 
-    $('.search__tabs-item').removeClass('search__tabs-item--active');
-    $('.search__content-item').removeClass('search__content-item--active');
+    $('.tab').removeClass('tab--active');
+    $('.tabs-content').removeClass('tabs-content--active');
   
-    $(this).addClass('search__tabs-item--active');
-    $($(this).attr('href')).addClass('search__content-item--active');
+    $(this).addClass('tab--active');
+    $($(this).attr('href')).addClass('tabs-content--active');
+  });
+
+  // клик "Избранное"
+  $('.product-item__favorite').on('click', function(){
+    $(this).toggleClass('product-item__favorite--active');
   })
+
+  // клик "Корзины"
+  $('.product-item__busket').on('click', function(){
+    $(this).toggleClass('product-item__busket--active');
+  })
+
+  // Слайдер популярных товаров
+  $('.product-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="img/arrow-black-left.svg" alt=""></button>',
+    nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="img/arrow-black-right.svg" alt=""></button>'
+  });
+
 
 });
