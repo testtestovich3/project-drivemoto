@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6{
     --color-gray :#F0F0F4;
     --color-light-gray: #C4C4C4;
     --color-light-gray-categ: #CDCDCD;
+    --color-gray-footer-text: #48494D;
 
     --font-SFB-r: 'SFProDisplay-Regular', sans-serif;
     --font-SFB-m: 'SFProDisplay-Medium', sans-serif;
@@ -806,4 +807,91 @@ h1, h2, h3, h4, h5, h6{
 /* Banner */
 .banner{
     margin-bottom: 80px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-gray);
+}
+.container {
+}
+.footer__top {
+    padding-top: 43px;
+}
+.footer__top-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__top-newslatter.footer__top-item{
+    width: 295px;
+    margin-right: 50px;
+}
+.footer__top-item {
+    width: 200px;
+}
+.footer__top-title {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-black);
+}
+.footer-form {
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-form__input {
+    background-color: var(--color-white);
+    border: none;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 12px;
+}
+
+.footer-form__input::placeholder{
+    color: var(--color-light-gray);
+}
+
+.footer-form__btn{
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    font-family: var(--font-SFB-sb);
+}
+.footer-form__btn:hover{
+    color: var(--color-blue);
+    background-color: var(--color-white);
+}
+.footer-list {
+    font-size: 14px;
+    line-height: 22px;
+}
+.footer-list__item {
+}
+.footer__top-social.footer__top-item{
+    width: 250px;
+}
+.social-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.social-list__item + .social-list__item {
+    margin-left: 30px;
+}
+.footer__bottom {
+    padding: 46px 0 22px;
+    display: flex;
+    justify-content: center;
+}
+.footer__bottom-link {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0 40px;
+    color: var(--color-gray-footer-text);
 }
