@@ -777,9 +777,13 @@ h1, h2, h3, h4, h5, h6{
     right: -20px;
 }
 
+.products{
+    margin-bottom: 80px;
+}
+
 .product__more{
     text-align: center;
-    margin: 35px 0 80px;
+    margin: 35px 0;
 }
 
 .product__more-link{
@@ -797,4 +801,9 @@ h1, h2, h3, h4, h5, h6{
 .product__more-link:hover{
     color: var(--color-gray);
     background-color: var(--color-black);
+}
+
+/* Banner */
+.banner{
+    margin-bottom: 80px;
 }
