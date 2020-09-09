@@ -40,6 +40,7 @@ html{
 
 *, *::before, *::after{
     box-sizing: inherit;
+    margin: 0;
 }
 
 body{
@@ -179,8 +180,8 @@ h1, h2, h3, h4, h5, h6{
     background-color: var(--color-blue);
     border-radius: 50%;
     text-align: center;
-    bottom: -15px;
-    right: -14px;
+    bottom: -8px;
+    right: -12px;
 }
 
 .user__link {
