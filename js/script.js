@@ -36,5 +36,13 @@ $(function(){
     nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="img/arrow-black-right.svg" alt=""></button>'
   });
 
+  // Обращение к инпутам (стилизация фильтра)
+  $('.filter-style').styler();
+
+  // Открытие/закрытие фильтра
+  $('.filter__item-drop').on('click', function(){
+    $(this).toggleClass('filter__item-drop--active');
+    $(this).next().slideToggle(200);
+  })
 
 });
