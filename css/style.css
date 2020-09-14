@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: transparent;
 }
 
-.slick-active li button{
+.slick-active button{
     background-color: var(--color-white);
 }
 
@@ -895,4 +895,33 @@ h1, h2, h3, h4, h5, h6{
     line-height: 14px;
     margin: 0 40px;
     color: var(--color-gray-footer-text);
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    margin-bottom: 40px;
+}
+
+.breadcrumbs__list-item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-light-gray);
+}
+
+.breadcrumbs__list-item::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 5px;
+    background-image: url('../img/link-arrows.svg');
+    width: 6px;
+    height: 9px;
+}
+
+.breadcrumbs__list-item:last-child::after{
+    display: none;
 }
