@@ -40,9 +40,19 @@ $(function(){
   $('.filter-style').styler();
 
   // Открытие/закрытие фильтра
-  $('.filter__item-drop').on('click', function(){
+  $('.filter__item-drop, .filter__extra').on('click', function(){
     $(this).toggleClass('filter__item-drop--active');
     $(this).next().slideToggle(200);
   })
+
+  // Подключение фильтрая для цены
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 100000,
+    max: 500000,
+    from: 200,
+    to: 500,
+    grid: false
+  });
 
 });
