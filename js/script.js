@@ -68,5 +68,13 @@ $(function(){
     $('.product-item__wrapper').addClass('product-item__wrapper--list');
   });
 
+  // рейтинг
+  $(".rate-yo").rateYo({
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+    normalFill: "#c4c4c4",
+    starWidth: "23px"
+  });
+
 });
 
