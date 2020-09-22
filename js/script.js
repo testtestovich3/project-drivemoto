@@ -55,4 +55,18 @@ $(function(){
     grid: false
   });
 
+  // Переключатор для иконок
+  $('.catalog__filter-btn-grid').on('click', function(){
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btn-line').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').removeClass('product-item__wrapper--list');
+  });
+
+  $('.catalog__filter-btn-line').on('click', function () {
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btn-grid').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').addClass('product-item__wrapper--list');
+  });
+
 });
+
