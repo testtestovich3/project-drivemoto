@@ -76,5 +76,10 @@ $(function(){
     starWidth: "23px"
   });
 
+  // 
+  $('.menu__btn').on('click', function(){
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+  })
+
 });
 
