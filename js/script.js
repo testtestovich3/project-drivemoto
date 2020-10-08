@@ -4,7 +4,15 @@ $(function(){
   $('.banner__section__slider').slick({
     dots: true,
     prevArrow: '<button class="banner__section__slider-btn banner__section__slider-btnprev"><img src="img/arrow-left.svg" alt=""></button>',
-    nextArrow: '<button class="banner__section__slider-btn banner__section__slider-btnnext"><img src="img/arrow-right.svg" alt=""></button>'
+    nextArrow: '<button class="banner__section__slider-btn banner__section__slider-btnnext"><img src="img/arrow-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 969,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   // форма с табами
@@ -76,7 +84,7 @@ $(function(){
     starWidth: "23px"
   });
 
-  // 
+  // бургер-меню
   $('.menu__btn').on('click', function(){
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
   })
