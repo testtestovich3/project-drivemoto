@@ -122,7 +122,13 @@ $(function(){
   // бургер-меню
   $('.menu__btn').on('click', function(){
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
-  })
+  });
+
+  // футер-открывашки
+  $(".footer__top-drop").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__top-drop--active');
+  });
 
 });
 
