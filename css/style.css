@@ -1695,6 +1695,10 @@ button.catalog__filter-btn-line{
     padding: 16px 56px;
 }
 
+.product-card__btn-mobile{
+    display: none;
+}
+
 .card__tabs {
     margin-bottom: 100px;
 }
